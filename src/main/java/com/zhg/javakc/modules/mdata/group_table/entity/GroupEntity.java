@@ -1,9 +1,15 @@
 package com.zhg.javakc.modules.mdata.group_table.entity;
 
 import com.zhg.javakc.base.entity.BaseEntity;
+import com.zhg.javakc.modules.mdata.price_table.entity.PriceEntity;
+
+
+import java.util.List;
+
 
 public class GroupEntity extends BaseEntity<GroupEntity> {
-     private  String orgId;// 主键ID
+
+    private  String orgId;// 主键ID
     private  String orgName;//组织名称
     private  String  orgNano;//组织简介
     private   String orgPid;//父类ID
@@ -11,6 +17,17 @@ public class GroupEntity extends BaseEntity<GroupEntity> {
     private   String  orgOpen;//是否默认打开
     private   String  orgOrder;//顺序
     private   String orgLevel;//组织级别
+    private List<PriceEntity> PriceEntity; //一对多关系
+
+    public List<com.zhg.javakc.modules.mdata.price_table.entity.PriceEntity> getPriceEntity() {
+        return PriceEntity;
+    }
+
+    public void setPriceEntity(List<com.zhg.javakc.modules.mdata.price_table.entity.PriceEntity> priceEntity) {
+        PriceEntity = priceEntity;
+    }
+
+
 
     public String getOrgId() {
         return orgId;
