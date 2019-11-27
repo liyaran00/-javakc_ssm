@@ -21,7 +21,7 @@ public class GroupController {
     @RequestMapping("/queryGroup")
     public ModelAndView queryTest(GroupEntity entity, HttpServletRequest request, HttpServletResponse response){
         //modelAndView对应的view是jsp：/view/test/list.jsp
-        ModelAndView modelAndView = new ModelAndView("mdata/list");
+        ModelAndView modelAndView = new ModelAndView("mdata/group/list");
         //分页查询
         Page<GroupEntity> page =groupService.queryGroup(entity, new Page<GroupEntity>(request, response));
         //modelAndView对应的model就是page

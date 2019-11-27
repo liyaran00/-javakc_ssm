@@ -1,8 +1,9 @@
-package com.zhg.javakc.modules.mdata.price_table.controller;
+package com.zhg.javakc.modules.mdata.price.controller;
 
 import com.zhg.javakc.base.page.Page;
-import com.zhg.javakc.modules.mdata.price_table.entity.PriceEntity;
-import com.zhg.javakc.modules.mdata.price_table.service.PriceService;
+import com.zhg.javakc.modules.mdata.price.entity.PriceEntity;
+import com.zhg.javakc.modules.mdata.price.service.PriceService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +21,7 @@ public class PriceController {
     @RequestMapping("/queryPrice")
     public ModelAndView queryPrice(PriceEntity entity, HttpServletRequest request, HttpServletResponse response){
         //modelAndView对应的view是jsp：/view/test/list.jsp
-        ModelAndView modelAndView = new ModelAndView("mdata/listprice");
+        ModelAndView modelAndView = new ModelAndView("mdata/price/list");
         //分页查询
         Page<PriceEntity> page =priceService.queryPrice(entity, new Page<PriceEntity>(request, response));
         //modelAndView对应的model就是page
