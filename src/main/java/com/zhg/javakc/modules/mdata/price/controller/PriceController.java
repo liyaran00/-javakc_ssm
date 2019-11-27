@@ -1,8 +1,8 @@
-package com.zhg.javakc.modules.mdata.price_table.controller;
+package com.zhg.javakc.modules.mdata.price.controller;
 
 import com.zhg.javakc.base.page.Page;
-import com.zhg.javakc.modules.mdata.price_table.entity.PriceEntity;
-import com.zhg.javakc.modules.mdata.price_table.service.PriceService;
+import com.zhg.javakc.modules.mdata.price.entity.PriceEntity;
+import com.zhg.javakc.modules.mdata.price.service.PriceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

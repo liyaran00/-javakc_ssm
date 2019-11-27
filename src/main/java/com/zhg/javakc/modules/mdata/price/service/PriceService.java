@@ -1,9 +1,9 @@
-package com.zhg.javakc.modules.mdata.price_table.service;
+package com.zhg.javakc.modules.mdata.price.service;
 
 import com.zhg.javakc.base.page.Page;
 import com.zhg.javakc.base.service.BaseService;
-import com.zhg.javakc.modules.mdata.price_table.dao.PriceDao;
-import com.zhg.javakc.modules.mdata.price_table.entity.PriceEntity;
+import com.zhg.javakc.modules.mdata.price.dao.PriceDao;
+import com.zhg.javakc.modules.mdata.price.entity.PriceEntity;
 import org.springframework.stereotype.Service;
 
 @Service

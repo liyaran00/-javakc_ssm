@@ -1,7 +1,7 @@
-package com.zhg.javakc.modules.mdata.group_table.entity;
+package com.zhg.javakc.modules.mdata.group.entity;
 
 import com.zhg.javakc.base.entity.BaseEntity;
-import com.zhg.javakc.modules.mdata.price_table.entity.PriceEntity;
+import com.zhg.javakc.modules.mdata.price.entity.PriceEntity;
 
 
 import java.util.List;
@@ -19,11 +19,11 @@ public class GroupEntity extends BaseEntity<GroupEntity> {
     private   String orgLevel;//组织级别
     private List<PriceEntity> PriceEntity; //一对多关系
 
-    public List<com.zhg.javakc.modules.mdata.price_table.entity.PriceEntity> getPriceEntity() {
+    public List<com.zhg.javakc.modules.mdata.price.entity.PriceEntity> getPriceEntity() {
         return PriceEntity;
     }
 
-    public void setPriceEntity(List<com.zhg.javakc.modules.mdata.price_table.entity.PriceEntity> priceEntity) {
+    public void setPriceEntity(List<com.zhg.javakc.modules.mdata.price.entity.PriceEntity> priceEntity) {
         PriceEntity = priceEntity;
     }
 

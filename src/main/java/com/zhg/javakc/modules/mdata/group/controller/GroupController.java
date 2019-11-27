@@ -1,8 +1,8 @@
-package com.zhg.javakc.modules.mdata.group_table.controller;
+package com.zhg.javakc.modules.mdata.group.controller;
 
 import com.zhg.javakc.base.page.Page;
-import com.zhg.javakc.modules.mdata.group_table.entity.GroupEntity;
-import com.zhg.javakc.modules.mdata.group_table.service.GroupService;
+import com.zhg.javakc.modules.mdata.group.entity.GroupEntity;
+import com.zhg.javakc.modules.mdata.group.service.GroupService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
