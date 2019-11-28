@@ -34,6 +34,7 @@
     
     <!-- 配置全局日期类型转换器 -->
     <mvc:annotation-driven conversion-service="conversionService" />
+
 	
 	<!-- 定义跳转的文件的前后缀 ，视图模式配置-->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
