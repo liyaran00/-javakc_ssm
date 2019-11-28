@@ -26,7 +26,7 @@ public class MSController {
     @RequestMapping("queryMS")
     public ModelAndView queryMS(MSEntity entity, HttpServletRequest request, HttpServletResponse response){
         //modelAndView对应的view是jsp：/view/test/list.jsp
-        ModelAndView modelAndView = new ModelAndView("msrelation/list");
+        ModelAndView modelAndView = new ModelAndView("mdata/msrelation/list");
         //分页查询
         Page<MSEntity> page =msService.queryMS(entity, new Page<MSEntity>(request, response));
         //modelAndView对应的model就是page
