@@ -1,11 +1,11 @@
-package com.zhg.javakc.modules.mdata.group_table.service;
+package com.zhg.javakc.modules.mdata.group.service;
 
 
 import com.zhg.javakc.base.page.Page;
 import com.zhg.javakc.base.service.BaseService;
-import com.zhg.javakc.modules.mdata.group_table.dao.GroupDao;
+import com.zhg.javakc.modules.mdata.group.dao.GroupDao;
 
-import com.zhg.javakc.modules.mdata.group_table.entity.GroupEntity;
+import com.zhg.javakc.modules.mdata.group.entity.GroupEntity;
 import org.springframework.stereotype.Service;
 
 @Service

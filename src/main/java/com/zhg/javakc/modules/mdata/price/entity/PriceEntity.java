@@ -1,4 +1,4 @@
-package com.zhg.javakc.modules.mdata.price_table.entity;
+package com.zhg.javakc.modules.mdata.price.entity;
 
 import com.zhg.javakc.base.entity.BaseEntity;
 

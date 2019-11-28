@@ -1,8 +1,8 @@
-package com.zhg.javakc.modules.mdata.group_table.controller;
+package com.zhg.javakc.modules.mdata.group.controller;
 
 import com.zhg.javakc.base.page.Page;
-import com.zhg.javakc.modules.mdata.group_table.entity.GroupEntity;
-import com.zhg.javakc.modules.mdata.group_table.service.GroupService;
+import com.zhg.javakc.modules.mdata.group.entity.GroupEntity;
+import com.zhg.javakc.modules.mdata.group.service.GroupService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +21,7 @@ public class GroupController {
     @RequestMapping("/queryGroup")
     public ModelAndView queryTest(GroupEntity entity, HttpServletRequest request, HttpServletResponse response){
         //modelAndView对应的view是jsp：/view/test/list.jsp
-        ModelAndView modelAndView = new ModelAndView("mdata/list");
+        ModelAndView modelAndView = new ModelAndView("mdata/group/list");
         //分页查询
         Page<GroupEntity> page =groupService.queryGroup(entity, new Page<GroupEntity>(request, response));
         //modelAndView对应的model就是page
