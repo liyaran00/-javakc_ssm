@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhg.javakc.modules.mdata.msrelation.dao.MSDao">
+
+    <resultMap id="ms" type="ms">
+        <result property="orgId" column="ORG_ID" />
+        <result property="supplierId" column="SUPPLIER_ID" />
+        <result property="materialId" column="MATERIAL_ID" />
+        <result property="msTaxRate" column="RELATION_TAX_RATE" />
+        <result property="toOrg" column="RELATION_TOORG" />
+    </resultMap>
+
+	<select id="findList" resultMap="ms">
+        SELECT ORG_ID,SUPPLIER_ID,MATERIAL_ID,RELATION_TAX_RATE,RELATION_TOORG
+        FROM XBS_SUPPLIER_MATERIAL_RELATION
+    </select>
+
+</mapper>

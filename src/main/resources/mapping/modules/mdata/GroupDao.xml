@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhg.javakc.modules.mdata.group.dao.GroupDao">
+	
+	  <select id="findList" resultType="com.zhg.javakc.modules.mdata.group.entity.GroupEntity">
+		  SELECT  org_id AS orgId ,org_name AS orgName,org_nano AS orgNano, org_pid  AS  orgPid  ,org_open  AS orgOpen ,
+		  org_order  AS  orgOrder  , org_level  AS  orgLevel FROM  xbs_org  WHERE 1=1
+	  </select>
+	
+
+</mapper>
