@@ -72,7 +72,7 @@ public class ExportExcel{
         	
         	
         	//test模块
-//            TestEntity element = (TestEntity) iter.next();
+//            ClientEntity element = (ClientEntity) iter.next();
 //            HSSFRow row=sheet.createRow(rowNum++);
 //            row.createCell(0).setCellValue(element.getTestName());
 //            

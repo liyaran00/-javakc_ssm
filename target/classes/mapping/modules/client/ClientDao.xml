@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhg.javakc.modules.client.dao.ClientDao">
+
+    <select id="findList" resultType="com.zhg.javakc.modules.client.entity.ClientEntity">
+        SELECT CLIENT_ID AS testId, CLIENT_NAME AS clientName, CLIENT_ABBR AS clientAbbr,CLIENT_LINKMAN AS clientLinkman,
+        LINKMAN_PHONE AS linkmanPhone,CLIENT_CODE AS clientCode
+        FROM XBS_CLIENT WHERE 1=1
+    </select>
+
+
+</mapper>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhg.javakc.modules.mdata.sales.price.dao.SalesDao">
+
+    <select id="findList" resultType="com.zhg.javakc.modules.mdata.sales.price.entity.SalesEntity">
+    SELECT
+ SALES_PRICE_ID AS salesPriceId,
+ ORG_ID AS orgId,
+ CLIENT_NAME AS clientName,
+ CHARGE_UNIT AS chargeUnit,
+ MATERIAL_ID AS materialId,
+ SP_HISTORY_ID AS spHistroyId,
+ SALES_PRICE_STATE AS salesPriceState,
+ CREATOR AS creator,
+ CREATE_DATE AS createDate
+ FROM xbs_sales_price XS,XBS_CLIENT XC  WHERE XS.CLIENT_ID = XC.CLIENT_ID
+    </select>
+</mapper>
+
